@@ -1,13 +1,10 @@
 def lengthOfLongestSubstring(s):
 	if len(s) <= 2:
-		print('yo')
 		return len(s) if len(s) <= 1 else 2 if s[0] != s[1] else 1
 
 	max_count = 0
 
 	for j in range(len(s) - 1):
-		print(f"index: {j}")
-		print(s[j:len(s)])
 		visited = []
 		count = 0
 		for k in range(j, len(s)):
